@@ -30,7 +30,7 @@ function Carregar()
 
 window.onscroll = function()
 {
-    if (window.innerHeight + scrollY > document.body.offsetHeight - 600 && carregar_automático && pkm < max_pkm)
+    if (window.innerHeight + scrollY > document.body.offsetHeight - window.innerHeight * 0.3 && carregar_automático && pkm < max_pkm)
     {
         carregar += 20
         Pokémon()

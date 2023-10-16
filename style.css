@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{background-color: #616161;}
+
+/* #region Header*/
+header
+{font-family: sans-serif;}
+
+#Menu
+{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+input
+{text-align: center;}
+/* #endregion */
+
+/* #region Main*/
+main
+{font-family: "Exo 2", sans-serif;}
+
+#Pokémons
+{
+    background-color: white;
+    max-width: 900px;
+    margin: 0px auto 10px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+img
+{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: auto;
+    width: 100%;
+}
+
+#Pokémons p, h2
+{text-indent: 10px;}
+
+#Pokémons p
+{
+    color: rgb(100, 100, 100);
+    font-size: smaller;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#Pokémons h2
+{
+    font-size: large;
+    margin-bottom: 7px;
+}
+
+#Pokémons h3
+{
+    color: white;
+    border-radius: 5px;
+    padding: 1px 20px 3px 20px;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: smaller;
+    font-weight: 500;
+}
+
+button
+{
+    background-color: white;
+    display: block;
+    margin: 20px auto 20px;
+    height: 50px;
+    width: 200px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+button:hover
+{
+    background-color: rgb(229, 229, 229);
+    cursor: pointer;
+}
+/* #endregion */
+
+/* #region Footer*/
+footer
+{
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+footer p
+{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+footer a
+{
+    color: white;
+    text-decoration: none;
+}
+/* #endregion */
+
+/* #region Media Queries*/
+@media (max-width: 508px)
+{#Pokémons {grid-template-columns: 1fr}}
+
+@media (min-width: 509px) and (max-width: 768px)
+{#Pokémons {grid-template-columns: repeat(2, 1fr)}}
+
+@media (min-width: 769px) and (max-width: 1024px)
+{#Pokémons{grid-template-columns: repeat(3, 1fr)}}
+/* #endregion */
